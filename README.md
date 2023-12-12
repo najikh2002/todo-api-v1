@@ -29,7 +29,6 @@ Masukkan beberapa perintah berikut ke dalam terminal:
     cd todo-api-v1
 	```
 3. Aktifkan lingkungan virtual agar paket yang dipasang masuk ke lingkungan virtual (tidak masuk langsung ke penyimpanan lokal)
-
     **Untuk operasi sistem Linux**
     ```
     source env/bin/activate    
@@ -68,3 +67,9 @@ Untuk penggunaan api dibagi menjadi tiga yaitu CRUD, USERS dan Otentikasi JWT
 `POST` **/api/v1/users/update :** Memperbarui user
 
 #### auth (Otentikasi JWT)
+
+`POST` **/api/v1/auth/login :** Membuat access dan refresh token untuk user
+
+`POST` **/api/v1/auth/test-token :** Untuk mencoba validasi token
+
+`POST` **/api/v1/auth/refresh :** Refresh token
