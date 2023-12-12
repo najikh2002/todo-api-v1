@@ -23,10 +23,10 @@ Masukkan beberapa perintah berikut ke dalam terminal:
    ```
    git clone https://github.com/najikh2002/todo-api-v1.git
    ```
-2. Buat lingkungan virtual isolasi versi python pada project
+2. Masuk pada folder project
 
     ```
-    python3.9 -m venv env
+    cd todo-api-v1
 	```
 3. Aktifkan lingkungan virtual agar paket yang dipasang masuk ke lingkungan virtual (tidak masuk langsung ke penyimpanan lokal)
     **Untuk operasi sistem Linux**
@@ -37,9 +37,13 @@ Masukkan beberapa perintah berikut ke dalam terminal:
     ```
     env\Scripts\activate.bat 
     ```
-4. Jalankan api-nya yang ada di app/app.py menggunakan `uvicorn`
-```
-    uvicorn app.app:app 
+4. Masuk ke folder *backend*
+	```
+    cd backend
+    ```
+5. Jalankan api-nya yang ada di app/app.py menggunakan *uvicorn*
+	```
+    uvicorn app.app:app
     ```
 
 ## Endpoint 
